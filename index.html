@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Data Structures Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lab-container">
+        <header>
+            <h1>🔬 Visual Data Structures Lab</h1>
+            <p>Interactive LIFO Stack Simulation</p>
+        </header>
+
+        <div class="main-layout">
+            <div class="control-panel">
+                <h3>Stack Controls</h3>
+                <div class="input-group">
+                    <input type="number" id="element-input" placeholder="Enter integer value" min="1" max="999">
+                    <button class="btn push-btn" onclick="pushToStack()">Push()</button>
+                </div>
+                <button class="btn pop-btn" onclick="popFromStack()">Pop()</button>
+                <button class="btn clear-btn" onclick="clearStack()">Reset Lab</button>
+
+                <div class="status-box">
+                    <h4>Console Status:</h4>
+                    <p id="status-text" class="status-idle">System Ready. Waiting for operations...</p>
+                </div>
+            </div>
+
+            <div class="visual-panel">
+                <div class="stack-container" id="stack-container">
+                    </div>
+                <div class="stack-base">STACK BASE</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

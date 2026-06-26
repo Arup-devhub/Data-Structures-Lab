@@ -1,0 +1,13 @@
+# Ignore compiled executables (Windows)
+*.exe
+*.o
+*.obj
+
+# Ignore compiled executables (Mac/Linux)
+out
+a.out
+stack_engine
+
+# Ignore local operating system junk
+.DS_Store
+Thumbs.db
