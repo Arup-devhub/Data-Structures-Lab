@@ -1,7 +1,6 @@
 // Local tracking mirroring structural C Stack parameters
 let stack = [];
 const MAX_SIZE = 5; // Simulating limited memory layout allocation
-
 const container = document.getElementById("stack-container");
 const statusText = document.getElementById("status-text");
 const inputField = document.getElementById("element-input");
