@@ -6,6 +6,7 @@ const statusText = document.getElementById("status-text");
 const inputField = document.getElementById("element-input");
 
 function updateVisuals() {
+    
     // Clear out container elements
     container.innerHTML = "";
 
@@ -14,6 +15,7 @@ function updateVisuals() {
         const block = document.createElement("div");
         block.className = "stack-block";
         block.innerText = value;
+        
 
         // Highlight the current active stack pointer 'top' node
         if (index === stack.length - 1) {
