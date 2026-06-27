@@ -14,7 +14,6 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
-
 .lab-container {
     width: 850px;
     background: #18181c;
@@ -177,7 +176,6 @@ input[type="number"]:focus {
     background: linear-gradient(135deg, #34d399, #059669);
     border: 2px solid #fff;
 }
-
 .stack-block.top-item::after {
     content: 'TOP';
     position: absolute;
