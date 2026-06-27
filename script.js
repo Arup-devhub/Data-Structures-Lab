@@ -38,13 +38,13 @@ function pushToStack() {
 
     // Structural input guarding
     if (isNaN(val)) {
-        updateStatus("⚠️ Enter a valid integer number first!", "error");
+        updateStatus(" Enter a valid integer number first!", "error");
         return;
     }
 
     // Condition Check: Stack Overflow validation block
     if (stack.length >= MAX_SIZE) {
-        updateStatus(`🚨 STACK OVERFLOW! Maximum allocation threshold [${MAX_SIZE}] breached. Cannot push.`, "error");
+        updateStatus(` STACK OVERFLOW! Maximum allocation threshold [${MAX_SIZE}] breached. Cannot push.`, "error");
         return;
     }
 
