@@ -176,6 +176,7 @@ input[type="number"]:focus {
     background: linear-gradient(135deg, #34d399, #059669);
     border: 2px solid #fff;
 }
+
 .stack-block.top-item::after {
     content: 'TOP';
     position: absolute;
@@ -187,6 +188,7 @@ input[type="number"]:focus {
     border-radius: 4px;
     font-weight: 800;
 }
+
 
 @keyframes slideIn {
     from {
