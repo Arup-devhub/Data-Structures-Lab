@@ -2,12 +2,14 @@
 #include <stdlib.h>
 
 #define MAX_SIZE 5  // Matching the web UI layout limits
+
 int stack[MAX_SIZE];
 int top = -1; // -1 means the stack is empty
 
 // Condition Check: Is the stack full?
 int isFull() {
     return top == MAX_SIZE - 1;
+    
 }
 // Condition Check: Is the stack empty?
 int isEmpty() {
