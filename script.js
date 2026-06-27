@@ -62,6 +62,7 @@ function popFromStack() {
         updateStatus("🚨 STACK UNDERFLOW! Array workspace completely empty. Cannot pop.", "error");
         return;
     }
+    
     // Process top deletion stack tracking
     const poppedVal = stack.pop();
     
