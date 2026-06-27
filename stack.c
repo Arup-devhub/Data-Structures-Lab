@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #define MAX_SIZE 5  // Matching the web UI layout limits
-
 int stack[MAX_SIZE];
 int top = -1; // -1 means the stack is empty
 
@@ -10,16 +9,14 @@ int top = -1; // -1 means the stack is empty
 int isFull() {
     return top == MAX_SIZE - 1;
 }
-
 // Condition Check: Is the stack empty?
 int isEmpty() {
     return top == -1;
 }
-
 // Push operation to insert an element
 void push(int value) {
     if (isFull()) {
-        printf("🚨 STACK OVERFLOW! Cannot push %d. Memory allocation full.\n", value);
+        printf(" STACK OVERFLOW! Cannot push %d. Memory allocation full.\n", value);
         return;
     }
     top++;
@@ -30,7 +27,7 @@ void push(int value) {
 // Pop operation to remove the top element
 int pop() {
     if (isEmpty()) {
-        printf("🚨 STACK UNDERFLOW! Structure is empty. Cannot pop.\n");
+        printf(" STACK UNDERFLOW! Structure is empty. Cannot pop.\n");
         return -1;
     }
     int poppedValue = stack[top];
@@ -57,7 +54,7 @@ void displayStack() {
 }
 
 int main() {
-    printf("🔬 Native C Stack Engine Initialized\n\n");
+    printf(" Native C Stack Engine Initialized\n\n");
     
     // Simulating exactly what a user might click in your web app:
     push(10);
