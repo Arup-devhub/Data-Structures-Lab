@@ -52,7 +52,7 @@ function pushToStack() {
     // Process push entry element assignment
     stack.push(val);
     inputField.value = ""; // clear prompt bar value
-    
+
     updateVisuals();
     updateStatus(`[Success] Pushed element ${val} onto memory stack. Top indicator bumped up.`, "success");
 }
@@ -63,7 +63,6 @@ function popFromStack() {
         updateStatus("🚨 STACK UNDERFLOW! Array workspace completely empty. Cannot pop.", "error");
         return;
     }
-
     // Process top deletion stack tracking
     const poppedVal = stack.pop();
     
