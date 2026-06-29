@@ -47,6 +47,7 @@ function pushToStack() {
     // Condition Check: Stack Overflow validation block
     if (stack.length >= MAX_SIZE) {
         updateStatus(` STACK OVERFLOW! Maximum allocation threshold [${MAX_SIZE}] breached. Cannot push.`, "error");
+        
         return;
     }
 
