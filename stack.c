@@ -19,6 +19,7 @@ int isEmpty() {
 void push(int value) {
     if (isFull()) {
         printf(" STACK OVERFLOW! Cannot push %d. Memory allocation full.\n", value);
+        
         return;
     }
     top++;
