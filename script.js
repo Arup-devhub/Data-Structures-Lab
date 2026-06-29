@@ -61,7 +61,7 @@ function pushToStack() {
 function popFromStack() {
     // Condition Check: Stack Underflow validation block
     if (stack.length === 0) {
-        updateStatus("🚨 STACK UNDERFLOW! Array workspace completely empty. Cannot pop.", "error");
+        updateStatus(" STACK UNDERFLOW! Array workspace completely empty. Cannot pop.", "error");
         return;
     }
     
